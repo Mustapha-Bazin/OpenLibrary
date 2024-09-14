@@ -1,0 +1,12 @@
+<div class="home">
+    <h1>{{title}}</h1>
+    <p>
+        At OpenLibrary, we believe in the transformative power of books.
+        OpenLibrary offers to you a collection of books and resources. 
+        Whether you're looking for fiction, non-fiction or research material, we have something for everyone. 
+        Explore, discover and enjoy a world of books with Us!
+    </p>
+    <div class="books">
+        <div *ngFor="let b of books" [class]="b[0]">{{b[1]}}</div>
+    </div> 
+</div>

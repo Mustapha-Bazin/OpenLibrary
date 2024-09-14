@@ -1,0 +1,11 @@
+<div class="box1">
+    <form (ngSubmit)="sendFunction()">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="Name" [(ngModel)]="contactUs.name"><br>
+      <label for="mail">Email:</label><br>
+      <input type="email" id="mail" name="Email" [(ngModel)]="contactUs.email"><br>
+      <label for="msg">Message:</label><br>
+      <textarea id="msg" name="msg" rows="10" cols="30" [(ngModel)]="contactUs.message"></textarea><br>
+      <input type="submit" value="Send">
+    </form>
+</div>

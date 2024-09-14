@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+form input{
+    width:200px;
+    height: 40px;
+    margin-bottom:20px;
+}
+form input[type=submit]{
+    margin-top:20px;
+    width:100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: blue;
+    color:white;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+}
+
+.box1::before{
+    content:'';
+    width:500px;
+    height:500px;
+    position:absolute;
+    background-color: skyblue;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.box1 form{
+    margin-top: 50px;
+    font-size: 20px;
+}

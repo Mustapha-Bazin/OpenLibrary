@@ -1,0 +1,10 @@
+<div class="box1">
+    <form (ngSubmit)="logInFunction()">
+      <label for="name">Username:</label><br>
+      <input type="text" id="name" name="Name" [(ngModel)]="logIn.userName"><br>
+      <label for="pw">Password:</label><br>
+      <input type="password" id="pw" name="password" [(ngModel)]="logIn.password"><br>
+      <input type="submit" value="Login">
+    </form>
+
+  </div>

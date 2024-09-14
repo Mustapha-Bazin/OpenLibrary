@@ -1,0 +1,16 @@
+<div class="box1">
+    <form (ngSubmit)="signUpFunction()">
+      <label for="name">Username:</label><br>
+      <input type="text" id="name" name="Name" [(ngModel)]="signUp.userName"><br>
+      <label for="mail">Email:</label><br>
+      <input type="email" id="mail" name="Email" [(ngModel)]="signUp.email"><br>
+      <label for="pw">Create Password:</label><br>
+      <input type="password" id="pw" name="password" [(ngModel)]="signUp.password"><br>
+      <label for="cpw">Confirm Password:</label><br>
+      <input type="password" id="cpw" name="cpassword" [(ngModel)]="confirmPassword"><br>
+      <span *ngIf="control"> *error password*</span><br>
+      <input type="submit" value="Register">
+
+    </form>
+
+  </div>
